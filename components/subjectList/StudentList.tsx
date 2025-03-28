@@ -30,6 +30,9 @@ const SubjectList = ({route}) => {
 
   return (
     <ScrollView style={styles.container}>
+      <View style={styles.profileContainer}>
+        <Image source={{uri: student.avatar}} style={styles.avatar} />
+      </View>
       <Text style={styles.title}>Welcome, {student.name}!</Text>
       <Text style={styles.info}>MSSV: {student.mssv}</Text>
       <Text style={styles.info}>Khoa: {student.khoa}</Text>
